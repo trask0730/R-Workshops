@@ -1,5 +1,5 @@
 # Introduction to Coding in R
-In this repository, you can find the R file from the "Introduction to Coding in R" workshop put on by Colorado State University's Association for Women in Mathematics cstudent chapter. 
+In this repository, you can find the R file from the "Introduction to Coding in R" workshop put on by Colorado State University's Association for Women in Mathematics student chapter. 
 
 In this workshop, we assume no coding background. Topics covered include:
 * Accessing R and using RStudio

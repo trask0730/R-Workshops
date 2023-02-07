@@ -101,7 +101,7 @@ if (b >= a){
 }
 
 # Some problems to try yourself:
-  # 1. Use if statements to write a program that tests whether a number if even or odd
+  # 1. Use if statements to write a program that tests whether a number is even or odd
       # Hint: you may find the floor() function useful
   # 2. Use if statements to write a program to tell you whether a student has met the prerequisites for Math 161
       # Assume the student has taken both m160 and m124 with a grade of A, B, C, D, or F.

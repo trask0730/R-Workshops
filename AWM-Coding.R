@@ -29,6 +29,8 @@ if (criteria){
   command
 }
 
+# Note: the "criteria" should be a logical statement
+
 # An example
 
 a = 7
@@ -37,6 +39,8 @@ b = 12
 if (b > a) {
   print("b is greater than a")
 }
+
+typeof(b>a)
 
 # Notice that if b is not greater than a, nothing is printed
 # We fix this using "else"
@@ -58,6 +62,8 @@ if (cirteria){
   command2
 }
 
+# Command2 will execute if (criteria) is false.
+
 # What if we want something telling us when a and b are equal, or if a is greater than b?
 # We can specify more conditions using "else if"
 
@@ -66,9 +72,9 @@ b = 12
 
 if (b > a) {
   print("b is greater than a")
-} else if (a > b) {
+} else if (b < a) {
   print("b is less than a")
-} else if (a == b) {
+} else if (b == a) {
   print("b is equal to a")
 }
 
@@ -141,8 +147,11 @@ for (name1 in list1) {
   }
 }
 
-poly1 <- c('a', 'b')
-poly2 <- c('c', 'd')
+# Here is an example
+  #  This example is akin to expanding the polynomial (a*x + b)*(c*x + d)
+
+poly1 <- c('a*x', 'b')
+poly2 <- c('c*x', 'd')
 
 for (x in poly1) {
   for (y in poly2){
@@ -167,10 +176,12 @@ for (x in poly1) {
 # R has a lot of useful packages built in
 # Load a package by typing in the followig:
 library(stats)
+# The stats package is (often) preloaded, so you don't actually have to load it. 
 
 # Alternatively, you can use the bottom right screen.
+  # Go to the "Packages" tab.
   # Find the package you want to use, and click the box. 
-  # In the console, you'll see that the package was loaded
+  # In the console, you'll see that the package was loaded.
 
 # Let's practice loading data from a csv file into R
 # If your csv file is in the same directory as your R file, then do the following:
@@ -205,7 +216,8 @@ for (i in 1:nrow(race_results)){
 bib_ten <- race_results[bib, ]
 bib_ten
 
-# We can use R's built-in statistics package to get do some statistics
+# We can use R's built-in statistics package to get some statistics on our data.
+
 # We can find the average of a list. 
   # Let's find the average finish time of the marathon, in minutes and hours
 mean(time)
@@ -244,7 +256,7 @@ plot(time, place, pch=16, col='red', cex=0.7,
      xlab = 'Time', ylab = "Place", 
      main = "Finish Time vs. Place")
 
-# We can also add a line of best fit
+# We can add a line of best fit
 abline(lm(place ~ time), col='blue', lty='dashed')
 
 # Compare previous plot to the scatter plot of Bib Number vs. Overall Place, 
@@ -260,7 +272,7 @@ abline(lm(place ~ bibs), col='blue', lty='dashed')
 
 ##### Acknowledgements #####
 
-# I used OpenSplitTime to gather race results from the 2023 Blue Sky Marathon
+# I used OpenSplitTime to gather race results from the 2022 Blue Sky Marathon
 # I used the following book as a reference: "Learning Base R" by Lawrence M. Leemis
 # Shoutout to my undergraduate statistics professor (Dr. Timothy Lucas) for teaching me how to use R for statistics
 # Thank YOU for coming to the workshop!

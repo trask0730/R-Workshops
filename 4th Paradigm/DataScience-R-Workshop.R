@@ -4,7 +4,7 @@
 # There are other uses for R in data science
   # Plotting is easy with ggplot2
   # Ex: you can use R for mathematical modeling using ODEs as well as topological data analysis (tda).
-  # Talk to me if you'd like to know more about either applications - we will see a taste of tda towards the end
+  # Talk to me if you'd like to know more about either applications
 
 
 
